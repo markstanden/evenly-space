@@ -1,0 +1,82 @@
+export default `
+<section class="room-details">
+   <form method="GET" action="" name="room-details">
+      <label for="roomSize" class="room-details-label">
+         <p>Room Length</p>
+         <input
+            name="roomSize"
+            id="roomSize"
+            type="text"
+            aria-label="Size of the room"
+            placeholder="Room Length"
+         />
+      </label>
+      <label for="lights" class="room-details-label">
+         <p>Number of Lights</p>
+         <input
+            name="lightsNumber"
+            type="text"
+            id="lightsNumber"
+            aria-label="Number of lights to space"
+            placeholder="Number of Lights"
+         />
+      </label>
+      <button type="submit">Submit</button>
+   </form>
+</section>
+<form class="room-details"> </form>
+<style>
+   form {
+      background-color: var(--color-white);
+      border-radius: 0.4rem;
+      overflow: hidden;
+      width: max-content;
+      font-size: calc(1 * var(--font-size));
+
+      max-height: 90vh;
+      overflow-y: auto;
+
+      width: 100%;
+      max-width: 650px;
+      margin: 2rem auto 2rem auto;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      justify-content: flex-start;
+   }
+
+   form label {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      height: min-content;
+      margin: var(--form-internal-margin);
+   }
+   form input,
+   form textarea {
+      font-size: 1.8rem;
+      width: calc(100% - 2 * var(--form-internal-margin));
+      height: 3rem;
+      outline-offset: 2px;
+      outline-color: var(--color-primary);
+
+      border: none;
+   }
+
+   form textarea {
+      height: 10rem;
+   }
+
+   form button {
+      margin-top: var(--large-space);
+      height: 3rem;
+      width: 20rem;
+      align-self: flex-end;
+
+      background-color: var(--color-primary);
+      color: var(--color-white);
+      border: none;
+      border-radius: 0.4rem;
+   }
+</style>
+`
